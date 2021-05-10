@@ -1,6 +1,6 @@
 name: 'CCA File Copy'
 type: module
-description: 'Migration process plugin for file copy with check of filesize'
+description: 'Migration process plugin for file_copy with check of filesize'
 core: 8.x
 package: 'CCA'
 version: 8.x-1.x-alpha1

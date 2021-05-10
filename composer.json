@@ -1,0 +1,10 @@
+{
+    "name": "islandora/cca_file_copy",
+    "type": "drupal-module",
+    "description": "Migration process plugin for file_copy with check of filesize",
+    "homepage": "https://github.com/catalyst/cca_file_copy",
+    "license": "GPL-2.0+",
+    "require": {
+        "drupal/migrate_tools": "^5.0"
+    }
+}
