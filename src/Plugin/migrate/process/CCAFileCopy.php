@@ -109,7 +109,7 @@ class CcaFileCopy extends FileCopy {
     // If the directory exists and is writable, avoid file_prepare_directory()
     // call and write the file to destination.
     if (!is_dir($dir) || !is_writable($dir)) {
-      if (!file_prepare_directory($dir, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS)) {
+      if (!\Drupal::service('file_system')->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS)) {
         throw new MigrateException("Could not create or write to directory '$dir'");
       }
     }
