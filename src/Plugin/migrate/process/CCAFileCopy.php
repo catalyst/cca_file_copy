@@ -2,6 +2,7 @@
 
 namespace Drupal\cca_file_copy\Plugin\migrate\process;
 
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\migrate\MigrateException;
 use Drupal\migrate\ProcessPluginBase;
 use Drupal\migrate\MigrateExecutableInterface;
